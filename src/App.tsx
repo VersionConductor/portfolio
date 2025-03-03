@@ -6,7 +6,7 @@ import { Home } from './pages';
 function App() {
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "/portfolio",
       element: <> 
                   <ThemeContextProvider>
                     <Header/>
