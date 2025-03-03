@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { useTheme } from '../../hooks/ThemeContextProvider';
 import Logo from '../Logo'
-import Anchor from '../Anchor'
 import "./headerFooter.css";
 
 const Header: React.FC = () => {
