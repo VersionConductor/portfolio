@@ -1,0 +1,267 @@
+.homeSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeSection .homesection-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 60%) 40%;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeSection .homeSection-image-container {
+    width: 200px;
+    height: 200px;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    background: yellow;
+    margin-inline: auto;
+}
+
+.homeSection .homesection-wrapper .home-info > h1 {
+    font-size: clamp(1rem, 3vw + 1rem, 3rem);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.homeSection .homesection-wrapper .home-info > p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.homeSection .homesection-wrapper .home-info .home-hire-and-about {
+    display: flex;
+    gap: 10px;
+}
+
+/* FB8C00 */
+.homeSection-Button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+.homeSection-Button.hireMe {
+    background: #FB8C00;
+    transition: 0.3s ease;
+}
+
+.homeSection-Button.aboutMe {
+    background: transparent;
+    outline: 1px solid #646cff;
+    transition: 0.3s ease;
+}
+
+.homeSection-Button.hireMe:hover {
+    border-color: #FB8C00;
+    background: transparent;
+}
+
+.homeSection-Button.aboutMe:hover {
+    border-color: transparent;
+    background: #646cff;
+}
+
+.homeSection-Button:focus,
+.homeSection-Button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* aboutSection section css styles  */
+.aboutSection {
+    padding: 2rem 0;
+}
+
+.aboutSection .about-heading {
+    text-align: center;
+    font-size: 1.6rem;
+}
+.aboutSection .about-content-wrapper {
+    width: 80%;
+    margin-inline: auto;
+}
+
+.aboutSection .about-content-wrapper .about-special {
+    text-align: center;
+    width: 400px;
+    margin-inline: auto;
+    padding-block: 1.5rem;
+}
+
+.aboutSection .about-content-wrapper .about-special > h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5em;
+}
+
+.aboutSection .about-content-wrapper .about-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.aboutSection .about-content-wrapper .about-cards .about-card-design {
+    padding: 1rem;
+}
+
+.aboutSection .about-content-wrapper .about-cards .about-card-design i {
+    font-size: 1.6rem;
+    color: var(--icon-color);
+    margin-bottom: 0.76rem;
+}
+.aboutSection .about-content-wrapper .about-cards .about-card-design h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #b8c7ca;
+    margin-bottom: 0.5rem;
+}
+.aboutSection .about-content-wrapper .about-cards .about-card-design span {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#about-me {
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#about-me h2 {
+    text-align: center;
+    color: #b8c7ca;
+}
+
+#about-me p {
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+/* skills section css styles  */
+.skillsSection {
+    padding: 2rem 0 !important;
+}
+
+#skills {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.skillsSection #skills h2 {
+    text-align: center;
+    color: #96aeb3;
+    margin-bottom: 1rem;
+}
+
+.skillsSection #skills .skill-category {
+    margin-bottom: 20px;
+}
+
+.skillsSection #skills .skill-category h3 {
+    color: #ffffff;
+    user-select: none;
+}
+
+.skillsSection .skills-category-continer {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.skillsSection .skills-category-continer .skill-category {
+    padding: 0 1rem;
+}
+
+.skillsSection #skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skillsSection #skills ul li {
+    background: #798E96;
+    margin: 6px 0;
+    padding: 10px;
+    border-radius: 3px;
+    user-select: none;
+}
+
+/* contact section css styles  */
+.contactSection {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.contactSection > .contact-content-wrapper {
+    padding: 2rem;
+    background-color: #3b4244;
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
+
+.contactSection > .contact-content-wrapper > *::selection {
+    color: red;
+    background: #7c8485;
+}
+
+.contactSection > .contact-content-wrapper > p:first-child {
+    font-size: 24px;
+}
+
+.contactSection > .contact-content-wrapper > .contact-form {
+    text-align: left;
+}
+
+.contactSection > .contact-content-wrapper > .contact-form .input-group {
+    margin-bottom: 8px;
+}
+.contactSection > .contact-content-wrapper > .contact-form .input-group > * {
+    width: 100%;
+}
+
+.contactSection > .contact-content-wrapper > .contact-form .input-group label {
+    font-size: 18px;
+    font-weight: 500;
+    user-select: none;
+}
+.contactSection > .contact-content-wrapper > .contact-form .input-group input, textarea {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    outline: none;
+    border: 3px;
+}
+.contactSection > .contact-content-wrapper > .contact-form .input-group textarea {
+    min-height: 100px;
+}
+
+.contactSection > .contact-content-wrapper .form-submit :is(.submitBtn) {
+    cursor: pointer;
+    user-select: none;
+    padding: 1rem 2rem;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    color: currentColor;
+    background: #202222;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.contactSection > .contact-content-wrapper .form-submit :is(p)::selection {
+    color: red;
+    background: #7c8485;
+}
